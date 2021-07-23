@@ -19,8 +19,3 @@ noremap <Up> <Nop> " Unmap arrow keys, faster to use hjkl
 noremap <Down> <Nop>
 noremap <Left> <Nop>
 noremap <Right> <Nop>
-
-nnoremap <up> <C-a> " Use arrow keys for more useful things
-nnoremap <down> <C-x>
-
-
