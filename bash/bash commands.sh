@@ -18,4 +18,5 @@ his () { # Search bash history with deduplicated and sorted results
 }
 
 vic () { # Quickly edit path scripts
-
+    vim $(which "$@")
+}
