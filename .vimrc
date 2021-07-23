@@ -15,7 +15,15 @@ set nowrap " No text wrapping
 set number " Line numbers
 set backspace=2 " For some reason backspace was broken, fix it
 
-noremap <Up> <Nop> " Unmap arrow keys, faster to use hjkl
-noremap <Down> <Nop>
-noremap <Left> <Nop>
-noremap <Right> <Nop>
+" Disable arrow keys, faster to use hjkl
+noremap <up> <NOP>
+noremap <down> <NOP>
+noremap <left> <NOP>
+noremap <right> <NOP>
+inoremap <up> <NOP>
+inoremap <down> <NOP>
+inoremap <left> <NOP>
+inoremap <right> <NOP>
+
+
+
