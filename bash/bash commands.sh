@@ -20,3 +20,7 @@ his () { # Search bash history with deduplicated and sorted results
 vic () { # Quickly edit path scripts
     vim $(which "$@")
 }
+
+? () { # Quickly search web
+    firefox "https://duckduckgo.com/?q=$(echo "$@" | jq -sRr @uri)"
+}
