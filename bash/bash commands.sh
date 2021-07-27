@@ -2,7 +2,7 @@
 
 alias rget="wget -q -c --show-progress --tries=0 --user-agent=\"Mozilla\"" # My wget preferred settings
 
-cat "$(ls -d ~/Desktop/Main/Strings/* | shuf -n 1)" # Cat random file from strings in my "main" folder, just a fun little command
+cat "$(ls -d ~/Desktop/Main/Strings/* | shuf -n 1)" # Cat random file from strings in my "Main" folder, just a fun little command
 
 webm () {
     ffmpeg -i "$@" -c:v libvpx-vp9 -crf 30 -b:v 0 -b:a 128k -c:a libopus "${@%.*}.webm" # My preferred webm settings
