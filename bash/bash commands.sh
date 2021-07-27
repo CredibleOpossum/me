@@ -17,7 +17,7 @@ his () { # Search bash history with deduplicated and sorted results
     cat ~/.bash_history | sort -u | grep "$search_query"
 }
 
-vic () { # Quickly edit path scripts
+vic () { # Quickly edit scripts in path
     vim $(which "$@")
 }
 
