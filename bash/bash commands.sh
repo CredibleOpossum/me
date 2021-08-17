@@ -25,5 +25,5 @@ vic () { # Quickly edit scripts in path
 }
 
 ? () { # Quickly search web
-firefox "https://duckduckgo.com/?q=$(echo "$@" | jq -sRr @uri)"
+    firefox "https://duckduckgo.com/?q=$(echo "$@" | jq -sRr @uri)"
 }
