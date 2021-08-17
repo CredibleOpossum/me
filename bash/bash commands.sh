@@ -1,4 +1,7 @@
 # Commands to be put into ~/.bashrc
+export EDITOR=vim
+
+export PS1="\n\e[1;32m[\w]\e[m\n\e[1;93m\u\e[m\e[1;94m@\e[m\e[1;93m\h\e[m\$ "
 
 alias rget="wget -q -c --show-progress --tries=0 --user-agent=\"Mozilla\"" # My wget preferred settings
 
@@ -22,5 +25,5 @@ vic () { # Quickly edit scripts in path
 }
 
 ? () { # Quickly search web
-    firefox "https://duckduckgo.com/?q=$(echo "$@" | jq -sRr @uri)"
+firefox "https://duckduckgo.com/?q=$(echo "$@" | jq -sRr @uri)"
 }
