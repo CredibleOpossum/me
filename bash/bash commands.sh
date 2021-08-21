@@ -1,7 +1,11 @@
 # Commands to be put into ~/.bashrc
 export EDITOR=vim
 
-export PS1="\n\e[1;32m[\w]\e[m\n\e[1;93m\u\e[m\e[1;94m@\e[m\e[1;93m\h\e[m\$ "
+GRAY='\[\033[0m\]'
+GREEN='\[\033[0;32m\]'
+PURPLE='\[\033[0;35m\]'
+
+export PS1="${GREEN}\u ${GRAY}\w ${PURPLE}> ${GRAY}" # Old PS1 had bugs with text being stuck
 
 alias rget="wget -q -c --show-progress --tries=0 --user-agent=\"Mozilla\"" # My wget preferred settings
 
