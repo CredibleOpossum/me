@@ -18,16 +18,3 @@ webm () {
 h264 () {
     ffmpeg -i "$@" -c:v libx264 -preset veryslow -crf 18 "${@%.*}.mp4" # My preferred encoding for videos
 }
-
-his () { # Search bash history with deduplicated and sorted results
-    search_query=$@
-    cat ~/.bash_history | sort -u | grep "$search_query"
-}
-
-vic () { # Quickly edit scripts in path
-    vim $(which "$@")
-}
-
-? () { # Quickly search web
-    firefox "https://duckduckgo.com/?q=$(echo "$@" | jq -sRr @uri)"
-}
