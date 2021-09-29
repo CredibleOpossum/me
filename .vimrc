@@ -5,6 +5,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'rust-lang/rust.vim' " Rust plugin, mostly for code formatting 
+Plugin 'z0mbix/vim-shfmt' " Formatting shell scripts
 
 call vundle#end()
 syntax enable
