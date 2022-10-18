@@ -17,3 +17,6 @@ webm () {
 h264 () {
     ffmpeg -i "$@" -c:v libx264 -preset veryslow -crf 18 "${@%.*}.mp4" # My preferred encoding for videos
 }
+
+alias pipesave="alsactl --file ~/.config/asound.state store" # Save and load audio configuration
+alias pipeload="alsactl --file ~/.config/asound.state restore"
