@@ -138,8 +138,6 @@ static void sandbox(void) {
 }
 
 int main(int argc, char *argv[]) {
-  struct utsname name;
-
   sandbox();
 
   char *program_path = argv[1];
